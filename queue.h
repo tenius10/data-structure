@@ -15,6 +15,9 @@ public:
 
     // Queue의 정의에 맞게 다음에 pop 될 값을 미리 본다.
     int peek();
+
+    // 큐에 데이터를 삽입한다. (push와 동일)
+    void operator+=(int data);
 };
 
 #endif

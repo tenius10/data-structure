@@ -19,3 +19,8 @@ int Stack::peek(){
     // head가 가리키는 노드를 읽는다.
     return LinkedList::get(0);
 }
+
+// Stack에 데이터를 삽입한다. (push와 동일)
+void Stack::operator+=(int data){
+    Stack::push(data);
+}

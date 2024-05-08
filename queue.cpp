@@ -20,3 +20,8 @@ int Queue::pop(){
 int Queue::peek(){
     return LinkedList::get(0);
 }
+
+// 큐에 데이터를 삽입한다. (push와 동일)
+void Queue::operator+=(int data){
+    Queue::push(data);
+}
