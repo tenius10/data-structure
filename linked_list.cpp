@@ -50,13 +50,13 @@ void LinkedList::insert(int index, int value){
 
 int LinkedList::get(int index){
     // 주의 : 중간에 인덱스 벗어나는 경우도 고려해주자.
-    if(index<0 || index>=size_) return;
+    if(index<0 || index>=size_) return -1;
 
     Node* cur=head_;
     for(int i=0;i<index && cur!=nullptr;i++){
         cur=cur->next_;
     }
-    
+
     return cur->value_;
 }
 
