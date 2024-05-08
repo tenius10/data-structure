@@ -17,6 +17,5 @@ int Stack::pop(){
 // Stack의 정의에 맞게 다음에 pop 될 값을 미리 본다.
 int Stack::peek(){
     // head가 가리키는 노드를 읽는다.
-    Node* top=LinkedList::head_;
-    return top->value_;
+    return LinkedList::get(0);
 }
