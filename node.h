@@ -3,7 +3,8 @@
 
 class Node {
   // TODO: Node 클래스 정의 수정할 것. 함수, 변수 추가 불가능
-
+  friend class LinkedList;
+  
 public:
   Node(int value) {
     value_ = value;
